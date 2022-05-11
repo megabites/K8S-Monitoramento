@@ -12,4 +12,4 @@ spec:
   - port: 9216
     targetPort: 9216
     name: exporter
-  type: LoadBalancer
+  type: NodePort

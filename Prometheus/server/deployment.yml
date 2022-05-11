@@ -36,8 +36,8 @@ spec:
       volumes:
         - name: config-volume
           configMap:
+            defaultMode: 420
             name: prometheus-configmap
         - name: prometheus-volume
-          persistentVolumeClaim:
-              claimName: prometheus-azurefile
+          emptyDir: {}
 
